@@ -1,8 +1,8 @@
 import { IoSearch } from "react-icons/io5";
 import Recipice from "../components/Recipice";
 import { useEffect, useState } from "react";
-const appId = import.meta.env.VITE_APP_ID
-const appApi = import.meta.env.VITE_APP_KEY
+const appId = import.env.VITE_APP_ID
+const appApi = import.env.VITE_APP_KEY
 const HomePage = () => {
     const [recipes, setRecipes] = useState([])
     const [loasding, setLoading] = useState(true)
